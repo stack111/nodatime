@@ -14,7 +14,7 @@ namespace NodaTime.Test.TimeZones
 {
     public class TzdbDateTimeZoneSourceTest
     {
-        private static readonly List<TimeZoneInfo> SystemTimeZones = TimeZoneInfo.GetSystemTimeZones().ToList();
+        private static readonly List<TimeZoneInfo> SystemTimeZones = TimeZoneInfo.GetSystemTimeZones().Take(125).ToList();
 
         /// <summary>
         /// Tests that we can load (and exercise) the binary Tzdb resource file distributed with Noda Time 1.1.0.
